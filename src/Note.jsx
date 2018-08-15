@@ -60,16 +60,16 @@ render() {
     <option  value="3">low</option>          
     </select>
 
-        <button onClick = {this.saveHandler} className="save-todo update-todo">   save</button>
-        <button onClick = {this.deleteHandler} className="delete-todo">   delete</button>
+        <button onClick = {this.saveHandler} className="btn btn-default save-todo update-todo">   save</button>
+        <button onClick = {this.deleteHandler} className="btn btn-default delete-todo">   delete</button>
       </li>
     </div>
   :
 
       <li className={`note ${className}`}>
         {this.props.text}
-        <button onClick = {this.editHandler} className="edit-todo">   edit</button>
-        <button onClick = {this.deleteHandler} className="delete-todo">   delete</button>
+        <button onClick = {this.editHandler} className="btn btn-default edit-todo">   edit</button>
+        <button onClick = {this.deleteHandler} className="btn btn-default delete-todo">   delete</button>
       </li>
       );
 
