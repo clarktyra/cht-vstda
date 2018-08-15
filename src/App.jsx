@@ -118,16 +118,16 @@ render() {
   
 return (
       <div className='container'>
-        <h1><font color="white">Very Simple Todo App</font></h1>
-        <h4><font color="white">Track all of the things</font></h4>
+        <h1><font color="white">Create A List of Things To Do</font></h1>
+        <h4><font color="white">And rate their priority</font></h4>
         <hr></hr>
 
         <div className="row">
           <div className="col-md-4">
             <div className="panel panel-default">
-              <div className="panel-heading">Add New Todo</div>
+              <div className="panel-heading">Create </div>
               <div className="panel-body">
-                <label>I want to..</label>
+                <label>Write what you want to get done</label>
                   <textarea 
                   type="object" 
                   ref={((input)=> {this.textInput = input})}
@@ -135,7 +135,7 @@ return (
                   value={this.state.noteText}
                   onChange={this.updateNoteText}
                   />
-                <label>How much of a priority is this?</label>
+                <label>Rate the priority</label>
                   <select 
                   className="create-todo-priority" 
                   onChange={this.updateNotePriority}>
